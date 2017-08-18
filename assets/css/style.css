@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 /*used to keep the divs under control*/
 .clearFix:after {
     content: " "; /* Older browser do not support empty content */
@@ -22,7 +26,7 @@
     background-color: #4aaaa5;
     color: white;
     width: 205px;
-    height: 40px;
+    height: 60px;
     padding: 15px 10px 10px 10px;
     font-size: 20pt;
     margin-left: 100px;
@@ -255,7 +259,7 @@ a:hover {
         padding-top: 5px;
     }
     #hangmanHead, #rpggameHead, #triviagameHead, #widgetHead, #rockpaperscissorsHead {
-        width: 95.5%;
+        width: 100%;
         margin: 0;
         left: 0;
         bottom: 5%;
@@ -311,18 +315,20 @@ a:hover {
     }
     /*portfolio image headers scale to container size*/
     #hangmanHead, #rpggameHead, #triviagameHead, #widgetHead, #rockpaperscissorsHead {
-        width: 85.5%;
+        width: 100%;
         margin: 0;
         left: 20px;
         bottom: 10%;
     }
 
     .mainContent {
-        width: 95%;
+        width: 100%;
+        max-width: 730px;
         margin: 20px;
     }
     .connectContent {
-        width: 95%;
+        width: 100%;
+        max-width: 730px;
         margin: 20px 20px 80px 20px;
         text-align: left;
     }
@@ -380,7 +386,7 @@ a:hover {
     }
     /*portfolio image headers scale to container size*/
     #hangmanHead, #rpggameHead, #triviagameHead, #widgetHead, #rockpaperscissorsHead {
-        width: 96.5%;
+        width: 100%;
         margin: 0;
         left: 0;
         bottom: 5%;
@@ -388,11 +394,13 @@ a:hover {
 
     /*content width modified for 640px viewport*/
     .mainContent {
-        width: 95%;
+        width: 100%;
+        max-width: 600px;
         margin: 20px;
     }
     .connectContent {
-        width: 95%;
+        width: 100%;
+        max-width: 600px;
         margin: 20px 20px 80px 20px;
         text-align: left;
     }
