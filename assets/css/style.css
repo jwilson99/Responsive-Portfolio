@@ -184,6 +184,7 @@ body {
     color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     background-image: url("../images/sakura.png");
+    width: 100%;
 }
 
 /*sets header text style*/
@@ -267,23 +268,28 @@ a:hover {
     .mainContent {
         box-sizing: border-box;
         width: 48%;
+        max-width: 700px;
     }
     .connectContent {
         box-sizing: border-box;
         width: 22%;
         text-align: left;
+        min-width: 230px;
     }
 }
 
 /*sets style for viewport of 768px and below (down to 640px)*/
 @media screen and (max-width:768px) {
     /*sections take up entire screen*/
+    .mainHeader {
+        width: 100%;
+    }
     .innerHeader {
         margin-left: 20px;
         padding-top: 20px;
     }
     .aboutHeader {
-        margin-left: 33%;
+        margin-left: 27%;
         padding-top: 5px;
     }
     .portfolioHeader {
@@ -322,15 +328,17 @@ a:hover {
     }
 
     .mainContent {
-        width: 100%;
-        max-width: 730px;
-        margin: 20px;
+        width: 90%;
+        max-width: 700px;
+        margin: 30px;
+        box-sizing: border-box;
     }
     .connectContent {
-        width: 100%;
+        width: 90%;
         max-width: 730px;
-        margin: 20px 20px 80px 20px;
+        margin: 30px 20px 80px 20px;
         text-align: left;
+        min-width: 230px;
     }
 }
 
@@ -395,7 +403,7 @@ a:hover {
     /*content width modified for 640px viewport*/
     .mainContent {
         width: 100%;
-        max-width: 600px;
+        max-width: 550px;
         margin: 20px;
     }
     .connectContent {
@@ -403,6 +411,7 @@ a:hover {
         max-width: 600px;
         margin: 20px 20px 80px 20px;
         text-align: left;
+        min-width: 230px;
     }
 
     /*footer maintains full width*/
